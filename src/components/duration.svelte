@@ -17,7 +17,6 @@
 
 <style lang="scss">
   div {
-    color: var(--fg-color2);
-    width: fit-content;
+    font-style: oblique;
   }
 </style>

@@ -40,7 +40,7 @@
         margin-bottom: 1px;
       }
       .secondary {
-        font-style: oblique;
+        text-decoration: underline;
         margin-bottom: 1px;
       }
     }
