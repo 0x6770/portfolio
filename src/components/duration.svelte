@@ -18,5 +18,6 @@
 <style lang="scss">
   div {
     font-style: oblique;
+    margin-bottom: 2px;
   }
 </style>
