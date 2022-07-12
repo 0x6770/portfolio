@@ -3,7 +3,11 @@
   export let link = ""
 </script>
 
-<a href={link}>{name}</a>
+{#if (link == "")}
+  <a>{name}</a>
+{:else}
+  <a href={link}>{name}</a>
+{/if}
 
 <style lang="scss">
   a {
