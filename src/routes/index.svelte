@@ -15,8 +15,6 @@
   {/await}
 </body>
 
-<svelte:body on:load|once={fetchPortfolio()}/>
-
 <script>
   import Cards from "../components/cards.svelte"
   import Contacts from "../components/contacts.svelte"
@@ -29,13 +27,13 @@
 
   const fetchPortfolio = fetch(url)
     .then(res => res.json())
-    .then(res => {
-      const intro = res["introduction"];
-      const contacts = res["contacts"];
-      const experience = handleExperience(res["experience"]);
-      const education = handleEducation(res["education"]);
-      const projects = handleProjects(res["projects"]);
-      const skills = res["skills"];
+    .then(data => {
+      const intro = data.introduction;
+      const contacts = data.contacts;
+      const experience = handleExperience(data.experience);
+      const education = handleEducation(data.education);
+      const projects = handleProjects(data.projects);
+      const skills = data.skills;
 
       const portfolio = {
         intro: intro,
