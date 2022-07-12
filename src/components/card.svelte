@@ -21,13 +21,11 @@
       <Duration start={start} end={end}/>
     {/if}
   </div>
-  <div>{@html mdlink(content)}</div>
+  <div class="detail">{@html mdlink(content)}</div>
 </div>
 
 <style lang="scss">
   .card {
-    display: flex;
-    flex-direction: column;
     color: var(--fg-color);
     padding: 10px;
     border-radius: 10px;
@@ -44,13 +42,6 @@
       .secondary {
         font-style: oblique;
         margin-bottom: 1px;
-      }
-      .duration {
-        color: var(--fg-color2);
-        width: fit-content;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 10px;
       }
     }
     .detail {

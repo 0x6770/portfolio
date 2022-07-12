@@ -30,7 +30,6 @@
     h2 {
       position: relative;
       width: fit-content;
-      // background-color: transparent;
       opacity: 0.999;
       &:after {
         content: "";

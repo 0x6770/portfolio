@@ -14,11 +14,6 @@
 <style lang="scss">
   section {
     margin-bottom: 10px;
-    .cards {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
     h2 {
       position: relative;
       width: fit-content;

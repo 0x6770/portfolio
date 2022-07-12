@@ -7,9 +7,6 @@
 
 <style lang="scss">
   a {
-    color: var(--theme-color);
-    background-color: transparent;
-    border: 0px;
     font-weight: 600;
   }
 </style>
